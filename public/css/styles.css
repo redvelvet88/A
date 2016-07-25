@@ -1,0 +1,109 @@
+
+.logo {
+  flex: 5;
+}
+
+.flex-container {
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /*border: 1px solid blue;*/
+}
+
+.flex-container ul{
+  flex: 12;
+}
+
+.container {
+  width: 75vw;
+  margin: auto;
+
+
+}
+
+strong {
+  font-weight: bolder;
+}
+
+.top-bar {
+  width: 100vw;
+  height: 6vh;
+  margin: 0 auto;
+  display: flex;
+  /*border: 1px solid red;*/
+  background-color: #00CCB0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.top-bar li{
+  display: inline;
+  padding-right: 20px;
+}
+
+nav ul {
+  height:100%;
+}
+
+ul {
+  margin: 0;
+  padding: 10px;
+}
+
+li a {
+  display: block;
+  color: black;
+  padding: 16px;
+  font-family:'Raleway', sans-serif;
+  text-decoration: none;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.home-button {
+  background-color: #FF1C20;
+}
+
+.home-button a {
+  color: white;
+}
+
+li a:hover {
+  border: 1px solid black;
+
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url('https://tccancer.org/cancer-center/wp-content/uploads/2011/02/patientcare.jpg') no-repeat top center;
+  background-size: cover;
+  height: 82vh;
+  /*border: 1px solid red;*/
+  background-position: bottom;
+}
+
+h1 {
+  /*border: 1px solid red;*/
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-weight: bold;
+  line-height: 130%;
+  width: 100%;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2.5em;
+}
+
+button {
+  width: 140px;
+  border: 2px solid white;
+  background: transparent;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  color: white;
+  padding: 10px;
+
+
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="clinicapp">
+  <head>
+    <meta charset="utf-8">
+    <title>A1c Diabetes Clinic</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"/>
+  </head>
+  <body>
+
+    <div class="top-bar">
+      <ul class = "container">
+        <li><strong>Phone:</strong>  + 801-555-5555</li>
+        <li><strong>Email:</strong>  info@a1c.com</li>
+      </ul>
+    </div>
+
+      <nav class="flex-container container">
+        <span class="logo"><a ui-sref="#"><img src="assets/images/A1c.jpg"></a></span>
+          <ul class="flex-container">
+            <li class="home-button"><a ui-sref="home"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li><a ui-sref="aboutdiabetes">About Diabetes</a></li>
+            <li><a ui-sref="services">Services</a></li>
+            <li><a ui-sref="appointments">Appointments</a></li>
+            <li><a ui-sref="contact">Contact Us</a></li>
+            <li><a ui-sref="onlinepayment">Online Payment</a></li>
+          </ul>
+      </nav>
+      <div class="background">
+          <h1>Taking Care of Your <strong>Diabetes</strong><br/>Means Taking Care of Your <strong>Heart<strong></h1>
+          <button type="button" name="button">Learn More</button>
+      </div>
+
+      	<div ui-view></div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js" charset="utf-8"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js" charset="utf-8"></script>
+      <script src="app.js" charset="utf-8"></script>
+      <script src="mainService.js" charset="utf-8"></script>
+      <script src="features/about/aboutdiabetesCtrl.js" charset="utf-8"></script>
+      <script src="features/appointments/appointmentsCtrl.js" charset="utf-8"></script>
+      <script src="features/contact/contactCtrl.js" charset="utf-8"></script>
+      <script src="features/payments/onlinepaymentCtrl.js" charset="utf-8"></script>
+      <script src="features/services/servicesCtrl.js" charset="utf-8"></script>
+    </body>
+</html>
