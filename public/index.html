@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>A1c Diabetes Clinic</title>
     <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="features/home/home.css"/>
+    <link rel="stylesheet" href="features/contact/contact.css"/>
+    <link rel="stylesheet" href="features/services/services.css"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
@@ -30,21 +33,24 @@
             <li><a ui-sref="onlinepayment">Online Payment</a></li>
           </ul>
       </nav>
-      <div class="background">
-          <h1>Taking Care of Your <strong>Diabetes</strong><br/>Means Taking Care of Your <strong>Heart<strong></h1>
-          <button type="button" name="button">Learn More</button>
-      </div>
+
+      <footer></footer>
+
 
       	<div ui-view></div>
 
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js" charset="utf-8"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js" charset="utf-8"></script>
+      <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
       <script src="app.js" charset="utf-8"></script>
       <script src="mainService.js" charset="utf-8"></script>
+      <script src="features/home/homeCtrl.js" charset="utf-8"></script>
       <script src="features/about/aboutdiabetesCtrl.js" charset="utf-8"></script>
       <script src="features/appointments/appointmentsCtrl.js" charset="utf-8"></script>
       <script src="features/contact/contactCtrl.js" charset="utf-8"></script>
       <script src="features/payments/onlinepaymentCtrl.js" charset="utf-8"></script>
       <script src="features/services/servicesCtrl.js" charset="utf-8"></script>
+      <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+      <script type="text/javascript">Stripe.setPublishableKey('pk_test_KIvbFgVTkBtahN70Dex9aezs');</script>
     </body>
 </html>

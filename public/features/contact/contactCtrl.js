@@ -1,3 +1,3 @@
-angular.module('clinicapp').controller('contactCtrl', function($scope, mainService) {
-
+angular.module('clinicapp').controller('contactCtrl', function($scope, mainService, $http) {
+  
 })

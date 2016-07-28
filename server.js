@@ -5,7 +5,7 @@ var passport = require('passport');
 require('./server/config/db.js')();
 require('./server/config/passport')(passport);
 
-var port = 3550;
+var port = 3700;
 
 //ROUTES//
 require('./server/features/auth/auth.server.routes')(app, passport);

@@ -1,0 +1,26 @@
+.services-background {
+
+  /*flex-wrap: wrap;*/
+  background: white;
+  background-size: cover;
+  height: 82vh;
+  border: 1px solid red;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  flex-direction: row;
+  height: 70%;
+  width: 100%;
+  border: 1px solid red;
+}
+
+.service img{
+  /*margin-bottom: 170px;*/
+  width: 80%;
+  border-radius: 50%;
+  border: 1px solid red;
+}
