@@ -1,26 +1,83 @@
+hr {
+  border-top: 0.5px solid #bdbdbd;
+}
+
 .services-background {
 
-  /*flex-wrap: wrap;*/
   background: white;
   background-size: cover;
   height: 82vh;
-  border: 1px solid red;
 }
 
 .services-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  margin-top: 80px;
+  align-items: flex-start;
   flex-direction: row;
-  height: 70%;
   width: 100%;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
-.service img{
-  /*margin-bottom: 170px;*/
-  width: 80%;
+.service {
+  padding: 10px 30px;
+}
+
+.service img {
+  width: 100%;
   border-radius: 50%;
-  border: 1px solid red;
+}
+
+.subservices-container {
+  /*border: 1px solid blue;*/
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  padding: 10px;
+  margin: 10px 20px;
+}
+
+.service-text {
+  /*border: 1px solid green;*/
+  display: flex;
+  justify-content: flex-start;;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  /*padding-top: 10px;*/
+}
+
+h2 {
+  font-family: 'Pavanam', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+}
+
+p, li{
+  font-family: 'Pavanam', sans-serif;
+  line-height: 1.25;
+}
+
+.service-text ul {
+  list-style: disc;
+}
+
+.make-appointment {
+  text-align: center;
+  margin: 0 auto;
+  background-color: black;
+  letter-spacing: 5px;
+  width: 25%;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  font-size: 1.15em;
+  box-shadow: 5px solid black;
+  border: 2px solid white;
+  padding: 15px 15px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  border-radius: 25px;
 }

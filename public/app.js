@@ -1,9 +1,14 @@
-angular.module('clinicapp', ['ui.router'])
+angular.module('clinicapp', ['ui.router', 'ngAnimate', 'ui.bootstrap'])
   .config(function($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
+        .state('logo', {
+          url: "/",
+          templateUrl: "features/home/home.html"
+        })
+
         .state('home', {
           url: "/",
           templateUrl: "features/home/home.html",

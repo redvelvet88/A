@@ -1,3 +1,3 @@
-angular.module('clinicapp').controller('homeCtrl', function($scope, mainService) {
+angular.module('clinicapp').controller('homeCtrl', function($scope, API) {
 
 })

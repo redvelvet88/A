@@ -1,17 +1,27 @@
-<!DOCTYPE html>
 <html ng-app="clinicapp">
   <head>
     <meta charset="utf-8">
     <title>A1c Diabetes Clinic</title>
+
+
     <link rel="stylesheet" href="css/reset.css"/>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/spinner.css"/>
     <link rel="stylesheet" href="features/home/home.css"/>
+    <link rel="stylesheet" href="features/about/aboutdiabetes.css"/>
     <link rel="stylesheet" href="features/contact/contact.css"/>
     <link rel="stylesheet" href="features/services/services.css"/>
+    <link rel="stylesheet" href="features/appointments/appointments.css"/>
+    <link rel="stylesheet" href="features/payments/onlinepayment.css"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pavanam" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css"/>
+
   </head>
   <body>
 
@@ -23,9 +33,9 @@
     </div>
 
       <nav class="flex-container container">
-        <span class="logo"><a ui-sref="#"><img src="assets/images/A1c.jpg"></a></span>
+        <span class="logo"><a ui-sref="logo"><img src="assets/images/A1c.jpg"></a></span>
           <ul class="flex-container">
-            <li class="home-button"><a ui-sref="home"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li class="home-button"><a ui-sref="home"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
             <li><a ui-sref="aboutdiabetes">About Diabetes</a></li>
             <li><a ui-sref="services">Services</a></li>
             <li><a ui-sref="appointments">Appointments</a></li>
@@ -34,14 +44,32 @@
           </ul>
       </nav>
 
-      <footer></footer>
-
 
       	<div ui-view></div>
 
+        <footer class="site-footer">
+          <div class="clinic-info">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;12345 SomeStreet<br/>
+              &nbsp;&nbsp;Salt Lake City, UT 84124<br/><br/>
+              <i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;801-555-5555<br/><br/>
+              <i class="fa fa-fax" aria-hidden="true"></i>&nbsp;801-000-0000<br/><br/>
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;info@a1c.com
+          </div>
+          <div class="more-info">
+          </div>
+          <div class="newsletter">
+            <h2>Join Our Newsletter</h2>
+            <input size="20" placeholder="Email"></input>
+          </div>
+
+        </footer>
+
+
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js" charset="utf-8"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js" charset="utf-8"></script>
       <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
+      <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.0.1.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js" charset="utf-8"></script>
       <script src="app.js" charset="utf-8"></script>
       <script src="mainService.js" charset="utf-8"></script>
       <script src="features/home/homeCtrl.js" charset="utf-8"></script>
@@ -51,6 +79,5 @@
       <script src="features/payments/onlinepaymentCtrl.js" charset="utf-8"></script>
       <script src="features/services/servicesCtrl.js" charset="utf-8"></script>
       <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
-      <script type="text/javascript">Stripe.setPublishableKey('pk_test_KIvbFgVTkBtahN70Dex9aezs');</script>
     </body>
 </html>

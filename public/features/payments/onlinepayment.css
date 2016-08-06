@@ -1,25 +1,22 @@
-.contact-background {
+.onlinepayment-background {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   background: #DEDEDE;
   background-size: cover;
-  height: 82vh;
 }
 
-.contact-form {
-  width: 55%;
+.patientinfo-container {
+  width: 50%;
   max-width: 1200px;
-  margin: auto;
+  margin: 100px;
   font: normal 18px/1.5 'Raleway', sans-serif;
   background: white;
-  border-color: gray;
+  border: 1px gray;
   border-radius: 10px;
   color:  #333333;
-  padding: 50px 0;
+  padding: 50px;
 }
 
-.contact-form * {
+.patientinfo-container * {
   box-sizing: border-box;
 }
 
@@ -82,4 +79,9 @@
   letter-spacing: .09em;
   border-radius: 2px;
   cursor: pointer;
+}
+
+.payment-container {
+  width: 50%;
+  height: 80vh;
 }
