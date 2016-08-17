@@ -20,16 +20,4 @@ angular.module('clinicapp').controller('aboutdiabetesCtrl', function($scope, API
       }
     ];
 
-    $scope.items = ['Item 1', 'Item 2', 'Item 3'];
-
-    $scope.addItem = function() {
-      var newItemNo = $scope.items.length + 1;
-      $scope.items.push('Item ' + newItemNo);
-    };
-
-    $scope.status = {
-      isCustomHeaderOpen: false,
-      isFirstOpen: true,
-      isFirstDisabled: false
-    };
   });

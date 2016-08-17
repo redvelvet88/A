@@ -1,0 +1,43 @@
+accordion {
+  display: block;
+  padding: 50px;
+}
+
+.accordion-panel {
+  padding: 5px;
+  margin: 0px 100px 0px 0px;
+  border: 1px solid black;
+  background: white;
+  cursor: pointer;
+}
+
+.accordion-panel *{
+  overflow: hidden;
+
+}
+
+.accordion-hide {
+  max-height: 0;
+  transition: all ease .25s;
+  padding: 0px 5px;
+}
+
+.accordion-show {
+  max-height:200px;
+  overflow: scroll;
+  transition: all ease 1s;
+  padding: 5px;
+}
+
+.accordion-text {
+  font-family: 'Pavanam', sans-serif;
+  padding: 0px 20px 0px 20px;
+
+}
+
+.accordion-title {
+  padding: 10px;
+  margin-left: 15px;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+}

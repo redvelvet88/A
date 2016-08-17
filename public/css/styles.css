@@ -69,17 +69,21 @@ li a {
   background-color: #FF1C20;
 }
 
+.home-button a:hover {
+  background-color: #FF1C20;
+}
+
 .home-button a {
   color: white;
 }
 
 li a:hover {
-  border: 1px solid black;
+  color: white;
 }
 
-a:focus, a:hover {
-    color: inherit;
+a:hover {
     text-decoration: none;
+    background-color: black;
 }
 
 .site-footer {

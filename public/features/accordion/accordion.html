@@ -1,0 +1,4 @@
+<div class="accordion-panel" ng-repeat="diabeticType in ac.diabetesData">
+  <div class="accordion-title" ng-click="ac.setSelected(diabeticType)"><i class="material-icons">add_box</i> {{ diabeticType.title }}</div>
+  <div class="accordion-text" ng-class="{'accordion-hide':ac.selected != diabeticType, 'accordion-show':ac.selected == diabeticType}"> {{ diabeticType.content }}</div>
+</div>

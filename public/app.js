@@ -1,4 +1,4 @@
-angular.module('clinicapp', ['ui.router', 'ngAnimate', 'ui.bootstrap'])
+angular.module('clinicapp', ['ui.router'])
   .config(function($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise('/');

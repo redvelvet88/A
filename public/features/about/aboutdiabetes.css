@@ -5,7 +5,6 @@ hr {
 .aboutdiabetes-background {
   display: flex;
   flex-direction: row;
-  background: white;
   background-size: cover;
   height: 82vh;
 }
@@ -13,30 +12,38 @@ hr {
 .facts-container{
   display: flex;
   flex-direction: column;
+  background: url('http://cdn.skim.gs/image/upload/v1456338210/msi/heart-with-stethoscope_swsklx.jpg') no-repeat left;
   margin: auto;
   width: 50vw;
+  height: 100%;
+  border-top: 0.5px solid #bdbdbd;
 }
 
 .about-header {
-  width: 20vw;
-  margin: auto;
+  width: 23vw;
+  margin-left: 450px;
+  margin-top: 70px;
 }
 
 .fact1 {
   font-size: 30px;
   padding: 20px;
-}
-
-.fact2{
-  font-size: 30px;
-  padding: 20px;
+  font-family: 'Nixie One', cursive;
+  font-weight: bold;
 }
 
 .accordion-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   width: 50vw;
-  padding: 100px;
+  padding-left: 100px;
+  background: #FF1C20;
+}
 
+.fact2{
+  width: 75%;
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  padding: 50px;
 }
